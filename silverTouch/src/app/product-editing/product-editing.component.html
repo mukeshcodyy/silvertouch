@@ -1,0 +1,40 @@
+<section>
+  <div class="container-fluid">
+      <div class="container">
+          <div>
+              <form  [formGroup]="RegisterForm" (submit)="OnSubmit()" class="row   justify-content-center" >
+                  <div  class="border align-content-center col-5 p-5">
+                  <div class="row py-2 ">
+                      <div class="h2 text-center">
+                          Employee Detail
+                      </div>
+                  </div>
+                  <div class="row py-2">
+                      <input class="form-control" id="name" formControlName="Name" type="text" placeholder="Employee Name..." aria-label="default input example">
+
+                  </div>
+                  <div class="row py-2">
+                      <input class="form-control" id="designation" formControlName="Designation" type="text" placeholder="Employee Designation..." aria-label="default input example">
+
+                  </div>
+                  <div class="row py-2">
+                      <input class="form-control" type="text" id="department" formControlName="Department" placeholder="Department..." aria-label="default input example">
+
+                  </div>
+                  <div class="row py-2">
+                      <input class="form-control" type="number" maxlength="10" formControlName="Phone" id="phone" placeholder="Phone..." aria-label="default input example">
+
+                  </div>
+
+
+                  <div class="row py-2">
+
+                      <button class="btn btn-primary" type="submit">{{buttonMode}}</button>
+                  </div>
+              </div>
+          </form>
+
+          </div>
+      </div>
+  </div>
+</section>
